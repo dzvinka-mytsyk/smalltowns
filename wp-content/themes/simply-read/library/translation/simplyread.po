@@ -1,0 +1,922 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Simply Read v1.0.8\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2015-01-23 03:19:10+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: CSL v1.x\n"
+"X-Poedit-Language: English\n"
+"X-Poedit-Country: UNITED STATES\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;\n"
+"X-Poedit-Basepath: ../../\n"
+"X-Poedit-Bookmarks: \n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Textdomain-Support: yes"
+
+#: 404.php:6
+#@ simplyread
+msgid "Epic 404 - Article Not Found"
+msgstr ""
+
+#: 404.php:18
+#@ simplyread
+msgid "The article you were looking for was not found. You may want to check your link or perhaps that page does not exist anymore."
+msgstr ""
+
+#: archive.php:8
+#: library/post-type-templates/taxonomy-custom_cat.php:23
+#@ simplyread
+#@ omgtheme
+msgid "Posts Categorized:"
+msgstr ""
+
+#: archive.php:13
+#@ simplyread
+msgid "Posts Tagged:"
+msgstr ""
+
+#: archive.php:22
+#@ simplyread
+msgid "Posts By:"
+msgstr ""
+
+#: archive.php:27
+#@ simplyread
+msgid "Daily Archives:"
+msgstr ""
+
+#: archive.php:32
+#@ simplyread
+msgid "Monthly Archives:"
+msgstr ""
+
+#: archive.php:37
+#@ simplyread
+msgid "Yearly Archives:"
+msgstr ""
+
+#: archive.php:65
+#: search.php:33
+#@ simplyread
+msgid "Posted"
+msgstr ""
+
+#: archive.php:65
+#: search.php:33
+#@ simplyread
+msgid "by"
+msgstr ""
+
+#: archive.php:82
+#: full-width.php:57
+#: library/post-type-templates/archive-custom_type.php:58
+#: library/post-type-templates/single-custom_type.php:80
+#: library/post-type-templates/taxonomy-custom_cat.php:57
+#: page.php:40
+#: search.php:50
+#: single.php:107
+#@ simplyread
+#@ omgtheme
+msgid "Oops, Post Not Found!"
+msgstr ""
+
+#: archive.php:83
+#: full-width.php:60
+#: library/post-type-templates/archive-custom_type.php:61
+#: library/post-type-templates/single-custom_type.php:83
+#: library/post-type-templates/taxonomy-custom_cat.php:60
+#: page.php:41
+#: search.php:51
+#: single.php:108
+#@ simplyread
+#@ omgtheme
+msgid "Uh Oh. Something is missing. Try double checking things."
+msgstr ""
+
+#: comments.php:17
+#@ simplyread
+msgid "<span>No</span> Comments"
+msgstr ""
+
+#: comments.php:17
+#@ simplyread
+msgid "<span>1</span> Comment"
+msgstr ""
+
+#: comments.php:17
+#@ simplyread
+msgid "<span>%</span> Comments"
+msgid_plural "<span>%</span> Comments"
+msgstr[0] ""
+msgstr[1] ""
+
+#: comments.php:38
+#@ simplyread
+msgid "&larr; Previous Comments"
+msgstr ""
+
+#: comments.php:39
+#@ simplyread
+msgid "More Comments &rarr;"
+msgstr ""
+
+#: comments.php:44
+#@ simplyread
+msgid "Comments are closed."
+msgstr ""
+
+#: full-width.php:28
+#: single.php:17
+#, php-format
+#@ simplyread
+msgid "Posted <time class=\"updated\" datetime=\"%1$s\" pubdate>%2$s</time> by <span class=\"author\">%3$s</span>"
+msgstr ""
+
+#: full-width.php:38
+#: library/post-type-templates/single-custom_type.php:57
+#: page.php:22
+#: post-formats/format-aside.php:7
+#: post-formats/format-audio.php:17
+#: post-formats/format-chat.php:8
+#: post-formats/format-gallery.php:8
+#: post-formats/format-image.php:9
+#: post-formats/format-link.php:10
+#: post-formats/format-quote.php:13
+#: post-formats/format-status.php:10
+#: post-formats/format-video.php:10
+#: post-formats/format.php:9
+#@ simplyread
+#@ omgtheme
+msgid "Pages:"
+msgstr ""
+
+#: functions.php:76
+#@ simplyread
+msgid "Posts Sidebar"
+msgstr ""
+
+#: functions.php:77
+#@ simplyread
+msgid "The Posts sidebar."
+msgstr ""
+
+#: functions.php:86
+#@ simplyread
+msgid "Page Sidebar"
+msgstr ""
+
+#: functions.php:87
+#@ simplyread
+msgid "The Page sidebar."
+msgstr ""
+
+#: functions.php:119
+#, php-format
+#@ simplyread
+msgid "<cite class=\"fn\">%1$s</cite> %2$s"
+msgstr ""
+
+#: functions.php:119
+#@ simplyread
+msgid "(Edit)"
+msgstr ""
+
+#: functions.php:120
+#: library/post-type-templates/archive-custom_type.php:33
+#: library/post-type-templates/single-custom_type.php:34
+#: library/post-type-templates/taxonomy-custom_cat.php:33
+#: search.php:33
+#@ simplyread
+#@ omgtheme
+msgid "F jS, Y"
+msgstr ""
+
+#: functions.php:125
+#@ simplyread
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: functions.php:170
+#@ simplyread
+msgid "Theme Color Scheme"
+msgstr ""
+
+#: functions.php:178
+#@ simplyread
+msgid "Site Logo"
+msgstr ""
+
+#: functions.php:180
+#@ simplyread
+msgid "Upload a logo to replace the default site name in the header"
+msgstr ""
+
+#: functions.php:188
+#@ simplyread
+msgid "Choose your logo (ideal width is 100-350px and ideal height is 35-40)"
+msgstr ""
+
+#: functions.php:195
+#@ simplyread
+msgid "Site favicon"
+msgstr ""
+
+#: functions.php:197
+#@ simplyread
+msgid "Upload a favicon"
+msgstr ""
+
+#: functions.php:205
+#@ simplyread
+msgid "Choose your favicon (ideal width and height is 16x16 or 32x32)"
+msgstr ""
+
+#: functions.php:212
+#@ simplyread
+msgid "Social Media Icons"
+msgstr ""
+
+#: functions.php:214
+#@ simplyread
+msgid "Optional media icons in the header"
+msgstr ""
+
+#: functions.php:222
+#@ simplyread
+msgid "Enter your Facebook url"
+msgstr ""
+
+#: functions.php:233
+#@ simplyread
+msgid "Enter your Twitter url"
+msgstr ""
+
+#: functions.php:244
+#@ simplyread
+msgid "Enter your Google+ url"
+msgstr ""
+
+#: functions.php:255
+#@ simplyread
+msgid "Enter your Pinterest url"
+msgstr ""
+
+#: functions.php:266
+#@ simplyread
+msgid "Enter your Linkedin url"
+msgstr ""
+
+#: functions.php:277
+#@ simplyread
+msgid "Enter your Youtube url"
+msgstr ""
+
+#: functions.php:288
+#@ simplyread
+msgid "Enter your Tumblr url"
+msgstr ""
+
+#: functions.php:299
+#@ simplyread
+msgid "Enter your Instagram url"
+msgstr ""
+
+#: functions.php:310
+#@ simplyread
+msgid "Enter your Flickr url"
+msgstr ""
+
+#: functions.php:321
+#@ simplyread
+msgid "Enter your Vimeo url"
+msgstr ""
+
+#: functions.php:332
+#@ simplyread
+msgid "Enter your Yelp url"
+msgstr ""
+
+#: functions.php:343
+#@ simplyread
+msgid "Enter your RSS url"
+msgstr ""
+
+#: functions.php:354
+#@ simplyread
+msgid "Enter your email address"
+msgstr ""
+
+#: functions.php:363
+#@ simplyread
+msgid "Slider Options"
+msgstr ""
+
+#: functions.php:365
+#@ simplyread
+msgid "Adjust the behavior of the image slider."
+msgstr ""
+
+#: functions.php:376
+#@ simplyread
+msgid "Select Effect:"
+msgstr ""
+
+#: functions.php:393
+#@ simplyread
+msgid "Autoplay Speed in Seconds"
+msgstr ""
+
+#: functions.php:400
+#@ simplyread
+msgid "Disable Author Bio"
+msgstr ""
+
+#: functions.php:402
+#@ simplyread
+msgid "Option to disable the author bio in the posts."
+msgstr ""
+
+#: functions.php:411
+#@ simplyread
+msgid "Disable the Author Bio?"
+msgstr ""
+
+#: functions.php:640
+#@ simplyread
+msgid "Facebook"
+msgstr ""
+
+#: functions.php:641
+#@ simplyread
+msgid "Twitter"
+msgstr ""
+
+#: functions.php:642
+#@ simplyread
+msgid "Google+"
+msgstr ""
+
+#: functions.php:643
+#@ simplyread
+msgid "Pinterest"
+msgstr ""
+
+#: functions.php:644
+#@ simplyread
+msgid "Linkedin"
+msgstr ""
+
+#: functions.php:645
+#@ simplyread
+msgid "Youtube"
+msgstr ""
+
+#: functions.php:646
+#@ simplyread
+msgid "Tumblr"
+msgstr ""
+
+#: functions.php:647
+#@ simplyread
+msgid "Instagram"
+msgstr ""
+
+#: functions.php:648
+#@ simplyread
+msgid "Flickr"
+msgstr ""
+
+#: functions.php:649
+#@ simplyread
+msgid "Vimeo"
+msgstr ""
+
+#: functions.php:650
+#@ simplyread
+msgid "RSS"
+msgstr ""
+
+#: functions.php:651
+#@ simplyread
+msgid "Email"
+msgstr ""
+
+#: functions.php:720
+#: library/class/class-tgm-plugin-activation.php:161
+#@ tgmpa
+msgid "Install Required Plugins"
+msgstr ""
+
+#: functions.php:721
+#: library/class/class-tgm-plugin-activation.php:162
+#@ tgmpa
+msgid "Install Plugins"
+msgstr ""
+
+#: functions.php:722
+#: library/class/class-tgm-plugin-activation.php:163
+#, php-format
+#@ tgmpa
+msgid "Installing Plugin: %s"
+msgstr ""
+
+#: functions.php:723
+#@ tgmpa
+msgid "Something went wrong with the plugin API."
+msgstr ""
+
+#: functions.php:724
+#: library/class/class-tgm-plugin-activation.php:165
+#, php-format
+#@ simplyread
+msgid "This theme requires the following plugin: %1$s."
+msgid_plural "This theme requires the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: functions.php:725
+#: library/class/class-tgm-plugin-activation.php:166
+#, php-format
+#@ simplyread
+msgid "This theme recommends the following plugin: %1$s."
+msgid_plural "This theme recommends the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: functions.php:726
+#: library/class/class-tgm-plugin-activation.php:167
+#, php-format
+#@ simplyread
+msgid "Sorry, but you do not have the correct permissions to install the %s plugin. Contact the administrator of this site for help on getting the plugin installed."
+msgid_plural "Sorry, but you do not have the correct permissions to install the %s plugins. Contact the administrator of this site for help on getting the plugins installed."
+msgstr[0] ""
+msgstr[1] ""
+
+#: functions.php:727
+#: library/class/class-tgm-plugin-activation.php:168
+#, php-format
+#@ simplyread
+msgid "The following required plugin is currently inactive: %1$s."
+msgid_plural "The following required plugins are currently inactive: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: functions.php:728
+#: library/class/class-tgm-plugin-activation.php:169
+#, php-format
+#@ simplyread
+msgid "The following recommended plugin is currently inactive: %1$s."
+msgid_plural "The following recommended plugins are currently inactive: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: functions.php:729
+#: library/class/class-tgm-plugin-activation.php:170
+#, php-format
+#@ simplyread
+msgid "Sorry, but you do not have the correct permissions to activate the %s plugin. Contact the administrator of this site for help on getting the plugin activated."
+msgid_plural "Sorry, but you do not have the correct permissions to activate the %s plugins. Contact the administrator of this site for help on getting the plugins activated."
+msgstr[0] ""
+msgstr[1] ""
+
+#: functions.php:730
+#: library/class/class-tgm-plugin-activation.php:171
+#, php-format
+#@ simplyread
+msgid "The following plugin needs to be updated to its latest version to ensure maximum compatibility with this theme: %1$s."
+msgid_plural "The following plugins need to be updated to their latest version to ensure maximum compatibility with this theme: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: functions.php:731
+#: library/class/class-tgm-plugin-activation.php:172
+#, php-format
+#@ simplyread
+msgid "Sorry, but you do not have the correct permissions to update the %s plugin. Contact the administrator of this site for help on getting the plugin updated."
+msgid_plural "Sorry, but you do not have the correct permissions to update the %s plugins. Contact the administrator of this site for help on getting the plugins updated."
+msgstr[0] ""
+msgstr[1] ""
+
+#: functions.php:732
+#: library/class/class-tgm-plugin-activation.php:173
+#@ simplyread
+msgid "Begin installing plugin"
+msgid_plural "Begin installing plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: functions.php:733
+#: library/class/class-tgm-plugin-activation.php:174
+#@ simplyread
+msgid "Begin activating plugin"
+msgid_plural "Begin activating plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: functions.php:734
+#: library/class/class-tgm-plugin-activation.php:175
+#@ tgmpa
+msgid "Return to Required Plugins Installer"
+msgstr ""
+
+#: functions.php:735
+#: library/class/class-tgm-plugin-activation.php:177
+#: library/class/class-tgm-plugin-activation.php:1939
+#@ tgmpa
+msgid "Plugin activated successfully."
+msgstr ""
+
+#: functions.php:736
+#, php-format
+#@ tgmpa
+msgid "All plugins installed and activated successfully. %s"
+msgstr ""
+
+#: header.php:71
+#: library/simplyread.php:210
+#@ simplyread
+msgid "The Main Menu"
+msgstr ""
+
+#: home-post-format/home-aside.php:9
+#: home-post-format/home-audio.php:9
+#: home-post-format/home-chat.php:9
+#: home-post-format/home-gallery.php:12
+#: home-post-format/home-image.php:8
+#: home-post-format/home-link.php:9
+#: home-post-format/home-quote.php:9
+#: home-post-format/home-status.php:9
+#: home-post-format/home-video.php:11
+#: home-post-format/home.php:7
+#, php-format
+#@ simplyread
+msgid "<time class=\"updated\" datetime=\"%1$s\" pubdate>%2$s</time>"
+msgstr ""
+
+#: index.php:56
+#@ simplyread
+msgid "No featured image set for this post."
+msgstr ""
+
+#: index.php:63
+#, php-format
+#@ simplyread
+msgid "Permalink to %s"
+msgstr ""
+
+#: index.php:73
+#@ simplyread
+msgid "Previous"
+msgstr ""
+
+#: index.php:73
+#@ simplyread
+msgid "&#9664;"
+msgstr ""
+
+#: index.php:74
+#@ simplyread
+msgid "Next"
+msgstr ""
+
+#: index.php:74
+#@ simplyread
+msgid "&#9654;"
+msgstr ""
+
+#: library/admin.php:39
+#@ simplyread
+msgid "j F Y @ g:i a"
+msgstr ""
+
+#: library/admin.php:51
+#@ simplyread
+msgid "Recently on Themble (Customize on admin.php)"
+msgstr ""
+
+#: library/class/class-tgm-plugin-activation.php:164
+#@ tgmpa
+msgid "Something went wrong."
+msgstr ""
+
+#: library/class/class-tgm-plugin-activation.php:176
+#@ tgmpa
+msgid "Return to the dashboard"
+msgstr ""
+
+#: library/class/class-tgm-plugin-activation.php:179
+#, php-format
+#@ tgmpa
+msgid "All plugins installed and activated successfully. %1$s"
+msgstr ""
+
+#: library/class/class-tgm-plugin-activation.php:180
+#@ tgmpa
+msgid "Dismiss this notice"
+msgstr ""
+
+#: library/class/class-tgm-plugin-activation.php:530
+#: library/class/class-tgm-plugin-activation.php:2156
+#@ tgmpa
+msgid "Return to the Dashboard"
+msgstr ""
+
+#: library/class/class-tgm-plugin-activation.php:1165
+#@ tgmpa
+msgid "Private Repository"
+msgstr ""
+
+#: library/class/class-tgm-plugin-activation.php:1168
+#@ tgmpa
+msgid "Pre-Packaged"
+msgstr ""
+
+#: library/class/class-tgm-plugin-activation.php:1173
+#@ tgmpa
+msgid "WordPress Repository"
+msgstr ""
+
+#: library/class/class-tgm-plugin-activation.php:1176
+#@ tgmpa
+msgid "Required"
+msgstr ""
+
+#: library/class/class-tgm-plugin-activation.php:1176
+#@ tgmpa
+msgid "Recommended"
+msgstr ""
+
+#: library/class/class-tgm-plugin-activation.php:1179
+#@ tgmpa
+msgid "Not Installed"
+msgstr ""
+
+#: library/class/class-tgm-plugin-activation.php:1181
+#@ tgmpa
+msgid "Installed But Not Activated"
+msgstr ""
+
+#: library/class/class-tgm-plugin-activation.php:1286
+#: library/class/class-tgm-plugin-activation.php:1394
+#@ tgmpa
+msgid "Install"
+msgstr ""
+
+#: library/class/class-tgm-plugin-activation.php:1308
+#: library/class/class-tgm-plugin-activation.php:1395
+#@ tgmpa
+msgid "Activate"
+msgstr ""
+
+#: library/class/class-tgm-plugin-activation.php:1357
+#, php-format
+#@ tgmpa
+msgid "No plugins to install or activate. <a href=\"%1$s\" title=\"Return to the Dashboard\">Return to the Dashboard</a>"
+msgstr ""
+
+#: library/class/class-tgm-plugin-activation.php:1373
+#@ tgmpa
+msgid "Plugin"
+msgstr ""
+
+#: library/class/class-tgm-plugin-activation.php:1374
+#@ tgmpa
+msgid "Source"
+msgstr ""
+
+#: library/class/class-tgm-plugin-activation.php:1375
+#@ tgmpa
+msgid "Type"
+msgstr ""
+
+#: library/class/class-tgm-plugin-activation.php:1376
+#@ tgmpa
+msgid "Status"
+msgstr ""
+
+#. gettext fix: identical singular and plural forms found, that may be ambiguous! Please check the code!
+#: library/class/class-tgm-plugin-activation.php:1630
+#: library/class/class-tgm-plugin-activation.php:178
+#@ tgmpa
+msgid "The following plugin was activated successfully:"
+msgid_plural "The following plugins were activated successfully:"
+msgstr[0] ""
+msgstr[1] ""
+
+#: library/class/class-tgm-plugin-activation.php:1922
+#@ tgmpa
+msgid "Install package not available."
+msgstr ""
+
+#: library/class/class-tgm-plugin-activation.php:1923
+#, php-format
+#@ tgmpa
+msgid "Downloading install package from <span class=\"code\">%s</span>&#8230;"
+msgstr ""
+
+#: library/class/class-tgm-plugin-activation.php:1924
+#@ tgmpa
+msgid "Unpacking the package&#8230;"
+msgstr ""
+
+#: library/class/class-tgm-plugin-activation.php:1925
+#@ tgmpa
+msgid "Installing the plugin&#8230;"
+msgstr ""
+
+#: library/class/class-tgm-plugin-activation.php:1926
+#@ tgmpa
+msgid "Plugin install failed."
+msgstr ""
+
+#: library/class/class-tgm-plugin-activation.php:1927
+#@ tgmpa
+msgid "Plugin installed successfully."
+msgstr ""
+
+#: library/class/class-tgm-plugin-activation.php:1938
+#@ tgmpa
+msgid "Plugin activation failed."
+msgstr ""
+
+#: library/class/class-tgm-plugin-activation.php:2052
+#@ tgmpa
+msgid "The installation and activation process is starting. This process may take a while on some hosts, so please be patient."
+msgstr ""
+
+#: library/class/class-tgm-plugin-activation.php:2053
+#, php-format
+#@ tgmpa
+msgid "%1$s installed and activated successfully."
+msgstr ""
+
+#: library/class/class-tgm-plugin-activation.php:2053
+#: library/class/class-tgm-plugin-activation.php:2062
+#@ tgmpa
+msgid "Show Details"
+msgstr ""
+
+#: library/class/class-tgm-plugin-activation.php:2053
+#: library/class/class-tgm-plugin-activation.php:2062
+#@ tgmpa
+msgid "Hide Details"
+msgstr ""
+
+#: library/class/class-tgm-plugin-activation.php:2054
+#@ tgmpa
+msgid "All installations and activations have been completed."
+msgstr ""
+
+#: library/class/class-tgm-plugin-activation.php:2055
+#, php-format
+#@ tgmpa
+msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: library/class/class-tgm-plugin-activation.php:2059
+#@ tgmpa
+msgid "The installation process is starting. This process may take a while on some hosts, so please be patient."
+msgstr ""
+
+#: library/class/class-tgm-plugin-activation.php:2060
+#, php-format
+#@ tgmpa
+msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
+msgstr ""
+
+#: library/class/class-tgm-plugin-activation.php:2061
+#, php-format
+#@ tgmpa
+msgid "The installation of %1$s failed."
+msgstr ""
+
+#: library/class/class-tgm-plugin-activation.php:2062
+#, php-format
+#@ tgmpa
+msgid "%1$s installed successfully."
+msgstr ""
+
+#: library/class/class-tgm-plugin-activation.php:2063
+#@ tgmpa
+msgid "All installations have been completed."
+msgstr ""
+
+#: library/class/class-tgm-plugin-activation.php:2064
+#, php-format
+#@ tgmpa
+msgid "Installing Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: library/post-type-templates/archive-custom_type.php:33
+#, php-format
+#@ omgtheme
+msgid "Posted <time class=\"updated\" datetime=\"%1$s\" pubdate>%2$s</time> by <span class=\"author\">%3$s</span>."
+msgstr ""
+
+#: library/post-type-templates/archive-custom_type.php:64
+#@ omgtheme
+msgid "This is the error message in the custom posty type archive template."
+msgstr ""
+
+#: library/post-type-templates/single-custom_type.php:34
+#: library/post-type-templates/taxonomy-custom_cat.php:33
+#, php-format
+#@ omgtheme
+msgid "Posted <time class=\"updated\" datetime=\"%1$s\" pubdate>%2$s</time> by <span class=\"author\">%3$s</span> <span class=\"amp\">&</span> filed under %4$s."
+msgstr ""
+
+#: library/post-type-templates/single-custom_type.php:66
+#@ omgtheme
+msgid "Custom Tags:"
+msgstr ""
+
+#: library/post-type-templates/single-custom_type.php:86
+#@ omgtheme
+msgid "This is the error message in the single-custom_type.php template."
+msgstr ""
+
+#: library/post-type-templates/taxonomy-custom_cat.php:39
+#@ omgtheme
+msgid "Read More &raquo;"
+msgstr ""
+
+#: library/post-type-templates/taxonomy-custom_cat.php:63
+#@ omgtheme
+msgid "This is the error message in the taxonomy-custom_cat.php template."
+msgstr ""
+
+#: library/simplyread.php:60
+#, php-format
+#@ dbt
+msgid "Page %s"
+msgstr ""
+
+#: library/simplyread.php:241
+#@ simplyread
+msgid "No Related Posts Yet!"
+msgstr ""
+
+#: library/simplyread.php:286
+#@ simplyread
+msgid "Read "
+msgstr ""
+
+#: library/simplyread.php:286
+#@ simplyread
+msgid "Read more &raquo;"
+msgstr ""
+
+#: post-formats/format-aside.php:16
+#: post-formats/format-audio.php:26
+#: post-formats/format-chat.php:17
+#: post-formats/format-gallery.php:17
+#: post-formats/format-image.php:18
+#: post-formats/format-link.php:19
+#: post-formats/format-quote.php:22
+#: post-formats/format-status.php:19
+#: post-formats/format-video.php:19
+#: post-formats/format.php:18
+#@ wpcontented
+msgid "TAGS: "
+msgstr ""
+
+#: search.php:6
+#@ simplyread
+msgid "Search Results for:"
+msgstr ""
+
+#: sidebar-page.php:16
+#: sidebar.php:16
+#@ simplyread
+msgid "This is a widget ready area. Add some and they will appear here."
+msgstr ""
+
+#. translators: used between list items, there is a space after the comma 
+#: single.php:20
+#@ simplyread
+msgid ", "
+msgstr ""
+
+#: single.php:21
+#, php-format
+#@ simplyread
+msgid "under %s"
+msgstr ""
+
+#: single.php:56
+#@ simplyread
+msgid "Written by"
+msgstr ""
+
+#: single.php:66
+#@ simplyread
+msgid "Related Posts"
+msgstr ""
+
