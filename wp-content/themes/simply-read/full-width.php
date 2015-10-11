@@ -1,7 +1,7 @@
 <?php
 /*
  Template Name: Full-width
- 
+
 */
 ?>
 
@@ -12,7 +12,7 @@
 					<div id="inner-content" class="wrap cf">
 									<h1 class="page-title"><?php the_title(); ?></h1>
 
-					</div>	
+					</div>
 
 
 								</header>
@@ -33,7 +33,7 @@
 
 										the_content();
 
-									
+
 										wp_link_pages( array(
 											'before'      => '<div class="page-links"><span class="page-links-title">' . __( 'Pages:', 'simplyread' ) . '</span>',
 											'after'       => '</div>',
@@ -44,7 +44,7 @@
 								</section>
 
 
-								
+
 
 								<?php comments_template(); ?>
 
@@ -57,14 +57,14 @@
 												<h1><?php _e( 'Oops, Post Not Found!', 'simplyread' ); ?></h1>
 												<p><?php _e( 'Uh Oh. Something is missing. Try double checking things.', 'simplyread' ); ?></p>
 										</header>
-										
+
 									</article>
 
 							<?php endif; ?>
 
 						</div>
 
-						
+
 
 				</div>
 

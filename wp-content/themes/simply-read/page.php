@@ -3,7 +3,7 @@
 			<div id="content">
 				<header class="article-header">
 					<div id="inner-content" class="wrap cf">
-						<h1 class="page-title" itemprop="headline"><?php the_title(); ?></h1>
+						<h1 class="page-title" itemprop="headline"><!--?php the_title(); ?--></h1>
 					</div>
 				</header> <?php // end article header ?>
 				<div id="inner-content" class="wrap cf">
@@ -17,7 +17,7 @@
 									<?php
 										the_content();
 
-										
+
 										wp_link_pages( array(
 											'before'      => '<div class="page-links"><span class="page-links-title">' . __( 'Pages:', 'simplyread' ) . '</span>',
 											'after'       => '</div>',
@@ -27,7 +27,7 @@
 									?>
 								</section> <?php // end article section ?>
 
-								
+
 
 								<?php comments_template(); ?>
 

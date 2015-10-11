@@ -1,14 +1,15 @@
 <?php get_header(); ?>
 
 			<div id="content">
+                                <!--
 				<header class="article-header">
 					<div id="inner-content" class="wrap cf">
-						<h1 class="entry-title single-title" itemprop="headline"><?php the_title(); ?></h1>
+						<h1 class="entry-title single-title" itemprop="headline">haha - <?php the_title(); ?></h1>
 					</div>
-				</header> <?php // end article header ?>
+				</header> --> <?php // end article header ?>
 
 				<div id="inner-content" class="wrap cf">
-					
+
 					<div id="main" class="m-all t-2of3 d-5of7 cf" role="main">
 
 						<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
@@ -25,7 +26,7 @@
 							</p>
 
 							<?php
-								
+
 								get_template_part( 'post-formats/format', get_post_format() );
 							?>
 
@@ -40,7 +41,7 @@
 			                  <div class="clear"></div>
 			                </div> <!-- next-prev-post -->
 
-							<?php 
+							<?php
 								if ( get_theme_mod('simplyread_author_bio') ):
 									$author_class = 'author-hide';
 								else:
@@ -62,20 +63,20 @@
 							<?php $related = get_posts( array( 'category__in' => wp_get_post_categories($post->ID), 'numberposts' => 4, 'post__not_in' => array($post->ID) ) ); ?>
 							<?php if (!empty($related)) : ?>
 								<div class="related posts">
-								
+
 									<h3><?php _e('Related Posts','simplyread'); ?></h3>
-									<ul> 
+									<ul>
 										<?php if( $related ) : foreach( $related as $post ) { ?>
 											<?php setup_postdata($post); ?>
 
 											<li>
 												<a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title(); ?>">
-													<?php $image_thumb = simplyread_catch_that_image_thumb(); $gallery_thumb = simplyread_catch_gallery_image_thumb(); 
-													if ( has_post_thumbnail()) : 
+													<?php $image_thumb = simplyread_catch_that_image_thumb(); $gallery_thumb = simplyread_catch_gallery_image_thumb();
+													if ( has_post_thumbnail()) :
 														the_post_thumbnail('simplyread-thumb-image-300by300');  ?>
-													<?php elseif(has_post_format('gallery') && !empty($gallery_thumb)) : 
+													<?php elseif(has_post_format('gallery') && !empty($gallery_thumb)) :
 														echo $gallery_thumb; ?>
-													<?php elseif(has_post_format('image') && !empty($image_thumb)) : 
+													<?php elseif(has_post_format('image') && !empty($image_thumb)) :
 														echo $image_thumb; ?>
 													<?php else: ?>
 														<img src="<?php echo IMAGES; ?>/blank.jpg" alt="No Featured Image">
