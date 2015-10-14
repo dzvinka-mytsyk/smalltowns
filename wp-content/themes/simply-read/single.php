@@ -1,12 +1,12 @@
 <?php get_header(); ?>
 
 			<div id="content">
-                                <!--
+
 				<header class="article-header">
 					<div id="inner-content" class="wrap cf">
-						<h1 class="entry-title single-title" itemprop="headline">haha - <?php the_title(); ?></h1>
+						<h1 class="entry-title single-title" itemprop="headline"><?php the_title(); ?></h1>
 					</div>
-				</header> --> <?php // end article header ?>
+				</header>  <?php // end article header ?>
 
 				<div id="inner-content" class="wrap cf">
 
