@@ -1,10 +1,12 @@
 <section class="entry-content cf" itemprop="articleBody">
-  
+  <input type="checkbox" name="options[postlink]" value="Rostock" <?php checked( $options['postlink'], 1 ); ?> />
+  <?php echo the_title(); ?>
+
   <?php
 
     the_content();
 
-    
+
     wp_link_pages( array(
       'before'      => '<div class="page-links"><span class="page-links-title">' . __( 'Pages:', 'simplyread' ) . '</span>',
       'after'       => '</div>',

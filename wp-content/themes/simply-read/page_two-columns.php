@@ -1,16 +1,18 @@
+<?php
+/*
+Template Name: Empty
+*/
+?>
+<?php get_header(); ?>
+  
+  <div id="content">
+    <div id="inner-content" class="wrap cf">
+      <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+        <?php the_content(); ?>
+      <?php endwhile; else : ?>
+        <p>nope</p>
+      <?php endif; ?>
+    </div>
+  </div>
 
-    <div id="map"></div>
-    <script type="text/javascript">
-
-var map;
-function initMap() {
-  map = new google.maps.Map(document.getElementById('map'), {
-    center: {lat: -34.397, lng: 150.644},
-    zoom: 8
-  });
-}
-
-    </script>
-    <script async defer
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDUVdoVhv2NH-Rzxb5ko455nb6OcsrcaEo&callback=initMap">
-    </script>
+<?php get_footer(); ?>

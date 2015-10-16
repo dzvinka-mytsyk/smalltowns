@@ -5,6 +5,13 @@
 				<header class="article-header">
 					<div id="inner-content" class="wrap cf">
 						<h1 class="entry-title single-title" itemprop="headline"><?php the_title(); ?></h1>
+						<h3 class="entry-title single-title"><?php
+							/* translators: used between list items, there is a space after the comma */
+							$category_list = get_the_category_list( __( ', ', 'simplyread' ) );
+							printf( __('%s', 'simplyread'),
+							$category_list
+							);
+						?></h3>
 					</div>
 				</header>  <?php // end article header ?>
 
@@ -14,16 +21,16 @@
 
 						<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 							<article id="post-<?php the_ID(); ?>" <?php post_class('cf'); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
-							<p class="byline vcard">
-								<?php printf( __( 'Posted <time class="updated" datetime="%1$s" pubdate>%2$s</time> by <span class="author">%3$s</span>', 'simplyread' ), get_the_time('Y-m-j'), get_the_time(get_option('date_format')), get_the_author_link( get_the_author_meta( 'ID' ) )); ?>
-								<?php
+							<!--p class="byline vcard"-->
+								<!--?php printf( __( 'Posted <time class="updated" datetime="%1$s" pubdate>%2$s</time> by <span class="author">%3$s</span>', 'simplyread' ), get_the_time('Y-m-j'), get_the_time(get_option('date_format')), get_the_author_link( get_the_author_meta( 'ID' ) )); ?-->
+								<!--?php
 									/* translators: used between list items, there is a space after the comma */
 									$category_list = get_the_category_list( __( ', ', 'simplyread' ) );
-									printf( __('under %s', 'simplyread'),
+									printf( __('%s', 'simplyread'),
 									$category_list
 									);
-								?>
-							</p>
+								?-->
+							<!--/p-->
 
 							<?php
 
@@ -32,11 +39,13 @@
 
 							<div class="next-prev-post">
 			                  <div class="prev">
-			                    <?php previous_post_link('<p><span class="fa fa-angle-left"></span> PREVIOUS POST</p> %link'); ?>
+			                  <!--?php previous_post_link('<p><span class="fa fa-angle-left"></span>	<<<</p> %link'); ?-->
+												<?php previous_post_link('<p><<<<</p> %link'); ?>
 			                  </div>
 			                  <div class="center-divider"></div>
 			                  <div class="next">
-			                  <?php next_post_link('<p>NEXT POST <span class="fa fa-angle-right"></span></p> %link'); ?>
+			                  <!--?php next_post_link('<p>NEXT POST <span class="fa fa-angle-right"></span></p> %link'); ?-->
+												<?php next_post_link('<p>>>>></p> %link'); ?>
 			                  </div>
 			                  <div class="clear"></div>
 			                </div> <!-- next-prev-post -->
@@ -121,3 +130,75 @@
 			</div>
 
 <?php get_footer(); ?>
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+<script type="text/javascript">
+(function($) {
+function new_map( $el ) {
+        var $markers = $el.find('.marker');
+	var args = {
+		zoom		: 10,
+		center		: new google.maps.LatLng(0, 0),
+		mapTypeId	: google.maps.MapTypeId.ROADMAP
+	};
+
+	var map = new google.maps.Map( $el[0], args);
+	map.markers = [];
+
+	$markers.each(function(){
+            add_marker( $(this), map );
+	});
+
+	center_map( map );
+	return map;
+}
+
+function add_marker( $marker, map ) {
+	var latlng = new google.maps.LatLng( $marker.attr('data-lat'), $marker.attr('data-lng') );
+
+	var marker = new google.maps.Marker({
+		position	: latlng,
+		map			: map
+	});
+
+	map.markers.push( marker );
+
+	if( $marker.html() ) {
+		var infowindow = new google.maps.InfoWindow({
+			content		: $marker.html()
+		});
+
+		google.maps.event.addListener(marker, 'click', function() {
+			infowindow.open( map, marker );
+		});
+	}
+
+}
+
+function center_map( map ) {
+
+	var bounds = new google.maps.LatLngBounds();
+
+	$.each( map.markers, function( i, marker ){
+		var latlng = new google.maps.LatLng( marker.position.lat(), marker.position.lng() );
+		bounds.extend( latlng );
+	});
+
+	if( map.markers.length == 1 ) {
+	    map.setCenter( bounds.getCenter() );
+	    map.setZoom( 10 );
+	} else {
+		map.fitBounds( bounds );
+	}
+
+}
+
+var map = null;
+
+$(document).ready(function(){
+	$('.acf-map').each(function(){
+		map = new_map( $(this) );
+	});
+});
+
+})(jQuery);
+</script>
