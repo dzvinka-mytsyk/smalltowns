@@ -13,6 +13,11 @@
 							);
 						?></h3>
 					</div>
+					<div id="add-to-route-btn">
+						<?php $location = get_field('geotag'); if( !empty($location) ): ?>
+							<input type="checkbox" store-key="selectedLocations" store-value='{"lat":<?php echo $location['lat']; ?>,"lng":<?php echo $location['lng']; ?>, "name": "<?php the_title(); ?>"}'/> Add to route
+						<?php endif; ?>
+					</div>
 				</header>  <?php // end article header ?>
 
 				<div id="inner-content" class="wrap cf">
@@ -130,6 +135,8 @@
 			</div>
 
 <?php get_footer(); ?>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+<script src="/wp-content/themes/simply-read/library/js/routes.js"></script>
 <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
 <script type="text/javascript">
 (function($) {
