@@ -5,86 +5,126 @@
 <!--[if (IE 8)&!(IEMobile)]><html <?php language_attributes(); ?> class="no-js lt-ie9"><![endif]-->
 <!--[if gt IE 8]><!--> <html <?php language_attributes(); ?> class="no-js"><!--<![endif]-->
 
-	<head>
-		<meta charset="utf-8">
+  <head>
+    <meta charset="utf-8">
 
-		<?php // force Internet Explorer to use the latest rendering engine available ?>
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <?php // force Internet Explorer to use the latest rendering engine available ?>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-		<title><?php wp_title('|', true, 'left'); ?></title>
+    <title><?php wp_title('|', true, 'left'); ?></title>
 
-		<?php // mobile meta (hooray!) ?>
-		<meta name="HandheldFriendly" content="True">
-		<meta name="MobileOptimized" content="320">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <?php // mobile meta (hooray!) ?>
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-		<?php if ( get_theme_mod( 'simplyread_favicon' ) ) : ?>
-		<link rel="icon" href="<?php echo esc_url( get_theme_mod( 'simplyread_favicon' ) ); ?>">
-		<?php endif; ?>
+    <?php if ( get_theme_mod( 'simplyread_favicon' ) ) : ?>
+    <link rel="icon" href="<?php echo esc_url( get_theme_mod( 'simplyread_favicon' ) ); ?>">
+    <?php endif; ?>
 
-		<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
-		<link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>">
+    <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
+    <link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>">
 
-		<?php // wordpress head functions ?>
-		<?php wp_head(); ?>
-		<?php // end of wordpress head ?>
+    <?php // wordpress head functions ?>
+    <?php wp_head(); ?>
+    <?php // end of wordpress head ?>
 
-	</head>
+    <!-- TODO Styles for routes page. Should be moved to right place when done. -->
+    <style>
 
-	<body <?php body_class(); ?>>
+      div.routes-content {
+        padding: 20px 0px 50px 0px;
+      }
 
-		<div id="container">
+      div.routes-content .towns ul li {width: 25%;float: left;margin-bottom: 25px;min-height: 45px;}
+      div.routes-content .towns ul li:last-child {margin-right: 0;}
+      /*media queries*/
+      @media screen and (max-width: 1279px) {
+        div.routes-content .towns ul li{width: 33%;}
+      }
+      @media screen and (max-width: 639px) {
+        div.routes-content .towns ul li{width: 50%;}
+      }
+      @media screen and (max-width: 499px) {
+        div.routes-content .towns ul li{width: 100%;}
+      }
 
-			<header class="header" role="banner" style="background:url(<?php header_image(); ?>)no-repeat;background-size:cover;">
-				<div class="top-area">
-					<div id="inner-header" class="wrap cf">
+      div.routes-content #build-route-btn {
+        float: right;
+      }
+
+      div.routes-content #more-towns-label {
+        cursor: pointer;
+      }
+
+      div.routes-content #more-towns-label:hover {
+        background: #F5F5F5;
+      }
+      div.routes-content #more-towns-label *:hover {
+        background: #F5F5F5;
+      }
+      div.routes-content #more-towns-label:hover * {
+        background: #F5F5F5;
+      }
+
+    </style>
+
+  </head>
+
+  <body <?php body_class(); ?>>
+
+    <div id="container">
+
+      <header class="header" role="banner" style="background:url(<?php header_image(); ?>)no-repeat;background-size:cover;">
+        <div class="top-area">
+          <div id="inner-header" class="wrap cf">
                 <div class="social-icons">
-		            <?php echo simplyread_social_icons(); ?>
+                <?php echo simplyread_social_icons(); ?>
                 </div> <!-- social-icons-->
                 <div class="search-bar">
                     <form role="search" method="get" class="search-form" action="<?php echo home_url( '/' ); ?>">
-					    <label>
-					        <input type="search" class="search-field" placeholder="Search" value="" name="s" title="Search for:" />
-					    </label>
-    					<input type="submit" class="search-submit" value=">>>" />
-					</form>
+              <label>
+                  <input type="search" class="search-field" placeholder="Search" value="" name="s" title="Search for:" />
+              </label>
+              <input type="submit" class="search-submit" value=">>>" />
+          </form>
                 </div> <!--search -->
                 <div class="clear"></div>
             </div> <!-- inner-header -->
             </div> <!-- top-area -->
-				<div id="inner-header" class="wrap cf">
+        <div id="inner-header" class="wrap cf">
 
-					<?php if ( get_theme_mod( 'simplyread_logo' ) ) : ?>
-					<p id="logo" class="h1"><a href="<?php echo home_url(); ?>" rel="nofollow"><img src="<?php echo esc_url( get_theme_mod( 'simplyread_logo' ) ); ?>" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" /></a></p>
-					 <?php else : ?>
-					<p id="logo" class="h1"><a href="<?php echo home_url(); ?>" rel="nofollow"><?php bloginfo('name'); ?></a></p>
-					<?php endif; ?>
-					<div id="responsive-nav">
-            				<img src="<?php echo IMAGES; ?>/nav.png" alt="Nav">
-       					 </div>
-       					 <div class="clear no-display"></div>
-       					 <nav role="navigation" id="main-navigation">
-       					 	<?php if ( has_nav_menu('main-nav') ) { ?>
-								<?php wp_nav_menu(array(
-		    					'container' => false,                           // remove nav container
-		    					'container_class' => 'menu cf',                 // class of container (should you choose to use it)
-		    					'menu' => __( 'The Main Menu', 'simplyread' ),  // nav name
-		    					'menu_class' => 'nav top-nav cf',               // adding custom nav class
-		    					'theme_location' => 'main-nav',                 // where it's located in the theme
-		    					'before' => '',                                 // before the menu
-			        			'after' => '',                                  // after the menu
-			        			'link_before' => '',                            // before each link
-			        			'link_after' => '',                             // after each link
-			        			'depth' => 0,                                   // limit the depth of the nav
-		    					'fallback_cb' => ''                             // fallback function (if there is one)
-								)); ?>
-							<?php } else { ?>
-								<ul class="nav top-nav cf">
-  								<?php wp_list_pages('sort_column=menu_order&title_li='); ?>
-								</ul>
-							<?php } ?>
-						</nav>
+          <?php if ( get_theme_mod( 'simplyread_logo' ) ) : ?>
+          <p id="logo" class="h1"><a href="<?php echo home_url(); ?>" rel="nofollow"><img src="<?php echo esc_url( get_theme_mod( 'simplyread_logo' ) ); ?>" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" /></a></p>
+           <?php else : ?>
+          <p id="logo" class="h1"><a href="<?php echo home_url(); ?>" rel="nofollow"><?php bloginfo('name'); ?></a></p>
+          <?php endif; ?>
+          <div id="responsive-nav">
+                    <img src="<?php echo IMAGES; ?>/nav.png" alt="Nav">
+                  </div>
+                  <div class="clear no-display"></div>
+                  <nav role="navigation" id="main-navigation">
+                    <?php if ( has_nav_menu('main-nav') ) { ?>
+                <?php wp_nav_menu(array(
+                  'container' => false,                           // remove nav container
+                  'container_class' => 'menu cf',                 // class of container (should you choose to use it)
+                  'menu' => __( 'The Main Menu', 'simplyread' ),  // nav name
+                  'menu_class' => 'nav top-nav cf',               // adding custom nav class
+                  'theme_location' => 'main-nav',                 // where it's located in the theme
+                  'before' => '',                                 // before the menu
+                  'after' => '',                                  // after the menu
+                  'link_before' => '',                            // before each link
+                  'link_after' => '',                             // after each link
+                  'depth' => 0,                                   // limit the depth of the nav
+                  'fallback_cb' => ''                             // fallback function (if there is one)
+                )); ?>
+              <?php } else { ?>
+                <ul class="nav top-nav cf">
+                  <?php wp_list_pages('sort_column=menu_order&title_li='); ?>
+                </ul>
+              <?php } ?>
+            </nav>
 
-				</div>
+        </div>
 
-			</header>
+      </header>

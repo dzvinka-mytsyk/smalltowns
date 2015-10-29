@@ -13,16 +13,18 @@
 							);
 						?></h3>
 					</div>
-					<div id="add-to-route-btn">
-						<?php $location = get_field('geotag'); if( !empty($location) ): ?>
-							<input type="checkbox" store-key="selectedLocations" store-value='{"lat":<?php echo $location['lat']; ?>,"lng":<?php echo $location['lng']; ?>, "name": "<?php the_title(); ?>"}'/> Add to route
-						<?php endif; ?>
-					</div>
+
 				</header>  <?php // end article header ?>
 
 				<div id="inner-content" class="wrap cf">
 
 					<div id="main" class="m-all t-2of3 d-5of7 cf" role="main">
+
+						<div id="add-to-route-btn">
+							<?php $location = get_field('geotag'); if( !empty($location) ): ?>
+								<input type="checkbox" store-key="selectedLocations" store-value='{"lat":<?php echo $location['lat']; ?>,"lng":<?php echo $location['lng']; ?>, "townId": "<?php the_ID(); ?>"}'/> Select this town
+							<?php endif; ?>
+						</div>
 
 						<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 							<article id="post-<?php the_ID(); ?>" <?php post_class('cf'); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
@@ -136,7 +138,7 @@
 
 <?php get_footer(); ?>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
-<script src="/wp-content/themes/simply-read/library/js/routes.js"></script>
+<script src="/wp-content/themes/simply-read/library/js/routes/routes.js"></script>
 <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
 <script type="text/javascript">
 (function($) {
